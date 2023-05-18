@@ -21,7 +21,7 @@ void publishCallback(const std::string& input,int a)
         msg.data = input;
         pub.publish(msg);
 
-        isPublishing = false;
+        isPublishing = true;
 
         loop_rate.sleep();
     }
